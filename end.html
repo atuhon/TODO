@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    結果は<span id="kekka"></span>点でした
+    <div id="hyouka"></div>
+
+
+    <script>
+       const count= localStorage.getItem("quiz")
+       const kekka=document.getElementById("kekka");
+       const hyouka=document.getElementById("hyouka")
+       kekka.textContent=count;
+       if(count>2){
+        hyouka.textContent="満点";
+        
+       }else if(count>=2){
+        hyouka.textContent="悪くない";
+
+
+       }else if(count=>1){
+        hyouka.textContent="やる気ある？";
+       }
+    </script>
+    <a href="./quiz.html">戻る</a>
+</body>
+</html>

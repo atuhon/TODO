@@ -33,8 +33,15 @@ console.log(item);
 const tr=document.createElement("tr");
 for(const prop in item){
     const td=document.createElement("td");
-    if(prop==="done"){
-        
+    if(prop=="done"){
+        const checkbox=document.createElement("input");
+        checkbox.type="checkbox";
+        checkbox.checked=item[prop];
+        td.appendChild(checkbox);
+
+    }else{
+        td.textContent=item[prop];
+
     }
     td.textContent=item[prop];
     tr.appendChild(td);
