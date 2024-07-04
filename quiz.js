@@ -32,7 +32,7 @@ function setUpquiz() {
 })}
 let count=0
 function answer(e){
-      const ans = e.target.textContent;
+      const ans = e.target.textContent
       console.log(e.target.textContent);
       if (ans == quiz[currentIndex].correct) {
         window.alert("あたり");

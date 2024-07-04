@@ -1,0 +1,18 @@
+input{
+    display: block;
+}
+textarea{
+    display: block;
+}
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+th{
+padding: 0,70px;
+border: solid 1px black;
+}
+td{
+    padding: 70px;
+    border: solid 1px black;
+}
